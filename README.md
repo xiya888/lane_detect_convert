@@ -9,14 +9,12 @@
 	   2) 运行convert_to_onnx.py，生成onnx模型，具体路径可设置，如存放在：nniefacelib/PFPLD/models/onnx/culane_18_download.onnx
 	   3）生成caffemodel及模型参数文件，执行nniefacelib/PFPLD/cvtcaffe/convertCaffe.py，生成的文件可设置，如存放在nniefacelib/PFPLD/cvtcaffe/models/
 	   4）实际运行时只需在上述代码中修改下路径即可。
-
 	3、模型的推理测试
 	   代码路径，同样更新到github上，参考代码：https://github.com/Jade999/caffe_lane_detection，代码根据实际有改动
 	   如何使用：
 	   1）进入caffe_lane_detection，将1中转换的文件(.caffemodel和.prototxt)放到该文件夹下，执行inference.py
 	4、项目使用
 	   可根据2中推理的代码进行修改
-
     说明：
 	   1、经过测试，目前转换后模型推理代码那块，对输入分辨率1640*590没有问题，但对于1280*720会有显示问题，需要再调整
 	   
