@@ -25,6 +25,7 @@ Operate Demo
     说明：  
 	   1、经过测试，目前转换后模型推理代码那块，对输入分辨率1640*590没有问题，但对于1280*720会有显示问题，需要再调整  
 	   
+<<<<<<< HEAD
 	   
 Other readme:
 ---
@@ -33,6 +34,14 @@ Other readme:
 	PyTorch implementation of the paper "[Ultra Fast Structure-aware Deep Lane Detection](https://arxiv.org/abs/2004.11757)".  
         
 	Updates: Our paper has been accepted by ECCV2020.  
+=======
+	     
+    附车道线检测算法Ultra-Fast-Lane-Detection部分说明：
+	# Ultra-Fast-Lane-Detection
+	PyTorch implementation of the paper "[Ultra Fast Structure-aware Deep Lane Detection](https://arxiv.org/abs/2004.11757)".
+
+	Updates: Our paper has been accepted by ECCV2020.
+>>>>>>> f5f933db419d6c5ee493f7e45dc032ee654f4c78
 
 	![alt text](vis.jpg "vis")
 
