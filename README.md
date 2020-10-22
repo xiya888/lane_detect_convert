@@ -1,8 +1,8 @@
 # lane_detect_convert
 
->Ultra-Fast-Lane-Detection
+Ultra-Fast-Lane-Detection\<br>
 
->PyTorch implementation of the paper "Ultra Fast Structure-aware Deep Lane Detection".
+PyTorch implementation of the paper "Ultra Fast Structure-aware Deep Lane Detection".\<br>
 
 Operate Demo
 ---
