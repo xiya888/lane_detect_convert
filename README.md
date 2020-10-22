@@ -1,28 +1,29 @@
 # lane_detect_convert
 
-Ultra-Fast-Lane-Detection
-PyTorch implementation of the paper "Ultra Fast Structure-aware Deep Lane Detection".
+>Ultra-Fast-Lane-Detection
 
-##Operate Demo
--------
-   本说明是对车道线检测算法Ultra-Fast-Lane-Detection(代码路径：https://github.com/cfzd/Ultra-Fast-Lane-Detection)的pytorch模型(代码根据实际需要有改动)转换成caffe模型。首先，要感谢所有原作者的创作和灵感，结合实际项目对车道线检测算法的模型转换做一个实践操作，经测试，是可以跑通的。
-   仅供科学研究，注意在使用过程中如涉及到知识产权问题时请标注来源并和原作者联系沟通，这里不对产权问题负责。
-   具体操作流程:
-	1、安装配置caffe，并编译好，见文件夹caffe/，编译参考其说明
-	2、模型转换，参考转换代码路径为：https://github.com/hanson-young/nniefacelib代码有修改，现同步到github上，思路是pytorch->onnx->caffemodel
-	   如何使用：
-	   1）存放车道线算法训练后的pytorch模型，如存放在：nniefacelib/PFPLD/models/pretrained/culane_18_download.pth
-	   2) 运行convert_to_onnx.py，生成onnx模型，具体路径可设置，如存放在：nniefacelib/PFPLD/models/onnx/culane_18_download.onnx
-	   3）生成caffemodel及模型参数文件，执行nniefacelib/PFPLD/cvtcaffe/convertCaffe.py，生成的文件可设置，如存放在nniefacelib/PFPLD/cvtcaffe/models/
-	   4）实际运行时只需在上述代码中修改下路径即可。
-	3、模型的推理测试
-	   代码路径，同样更新到github上，参考代码：https://github.com/Jade999/caffe_lane_detection，代码根据实际有改动
-	   如何使用：
-	   1）进入caffe_lane_detection，将1中转换的文件(.caffemodel和.prototxt)放到该文件夹下，执行inference.py
-	4、项目使用
-	   可根据2中推理的代码进行修改
-    说明：
-	   1、经过测试，目前转换后模型推理代码那块，对输入分辨率1640*590没有问题，但对于1280*720会有显示问题，需要再调整
+>PyTorch implementation of the paper "Ultra Fast Structure-aware Deep Lane Detection".
+
+Operate Demo
+---
+   >本说明是对车道线检测算法Ultra-Fast-Lane-Detection(代码路径：https://github.com/cfzd/Ultra-Fast-Lane-Detection)的pytorch模型(代码根据实际需要有改动)转换成caffe模型。首先，要感谢所有原作者的创作和灵感，结合实际项目对车道线检测算法的模型转换做一个实践操作，经测试，是可以跑通的。
+   >仅供科学研究，注意在使用过程中如涉及到知识产权问题时请标注来源并和原作者联系沟通，这里不对产权问题负责。
+   >具体操作流程:
+	>1、安装配置caffe，并编译好，见文件夹caffe/，编译参考其说明
+	>2、模型转换，参考转换代码路径为：https://github.com/hanson-young/nniefacelib代码有修改，现同步到github上，思路是pytorch->onnx->caffemodel
+	   >如何使用：
+	   >1）存放车道线算法训练后的pytorch模型，如存放在：nniefacelib/PFPLD/models/pretrained/culane_18_download.pth
+	   >2) 运行convert_to_onnx.py，生成onnx模型，具体路径可设置，如存放在：nniefacelib/PFPLD/models/onnx/culane_18_download.onnx
+	   >3）生成caffemodel及模型参数文件，执行nniefacelib/PFPLD/cvtcaffe/convertCaffe.py，生成的文件可设置，如存放在nniefacelib/PFPLD/cvtcaffe/models/
+	   >4）实际运行时只需在上述代码中修改下路径即可。
+	>3、模型的推理测试
+	   >代码路径，同样更新到github上，参考代码：https://github.com/Jade999/caffe_lane_detection，代码根据实际有改动
+	   >如何使用：
+	   >1）进入caffe_lane_detection，将1中转换的文件(.caffemodel和.prototxt)放到该文件夹下，执行inference.py
+	>4、项目使用
+	   >可根据2中推理的代码进行修改
+    >说明：
+	   >1、经过测试，目前转换后模型推理代码那块，对输入分辨率1640*590没有问题，但对于1280*720会有显示问题，需要再调整
 	   
 
 ##Other readme:
